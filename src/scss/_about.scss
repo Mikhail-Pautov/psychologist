@@ -1,0 +1,27 @@
+.about{
+    padding-top: 27px;
+&__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: $accent-color;
+    text-align: center;
+}
+&__wrapper{
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+&__text{
+    margin-left: 27px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: $color-text;
+}
+
+
+
+
+}

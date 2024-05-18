@@ -1,0 +1,47 @@
+@import 'bootstrap-reboot.min';
+@import "variables";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.container {
+    width: 1180px;
+    //padding: 0 20px 0 20px;
+    //height: 300px;
+    margin: 0 auto;
+   
+
+}
+
+@import "modal";
+@import "footer";
+@import "reviews";
+@import "cost";
+@import "services";
+@import "header";
+@import "promo";
+@import "about";
+@import "button";
+@import "general";
+@import "media";   //подключают самыми последними
+
+
+
+
+
+
+
+
+
+
+
+
+
+

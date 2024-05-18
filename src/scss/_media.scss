@@ -1,0 +1,1044 @@
+@media(max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+
+    .header{
+        &__menu-item a{
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;     
+        }
+    }
+
+    .promo{
+        &__descr{
+            margin-bottom: 100px;
+        }
+        &__btn{
+            margin-bottom: 100px;
+        }
+        &__title{
+            font-size: 35px;
+        }
+
+    }
+    
+    .about{
+        &__text{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            
+        }
+    }
+
+    .services{
+        &__item{
+            width: 460px;
+        }
+        &__text{
+            width: 460px;
+            padding-left: 0px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 28px;
+            color: $color-text;
+        }
+    }
+
+    .cost{
+        &__individual{
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__married-couple{
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__item{
+            width: 300px;
+            & ul{
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        &__item-title{
+            margin-top: 27px;
+        }
+        &__price{
+            font-size: 36px;
+        }
+    }
+
+    .reviews{
+        &__next{
+            margin: auto 0;
+            margin-left: 30px;
+            margin-right: 30px; 
+        }
+        &__back{
+            margin: auto 0;
+            margin-left: 30px;
+            margin-right: 30px; 
+        }
+    }
+
+    .card{
+        &__content-text{
+            margin-top: 7px;
+            color: $color-text;
+        }
+    }
+   
+}
+
+
+
+@media(max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+
+    .header{
+        &__menu-item a{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;       
+        }
+        &__menu{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &__menu-item{
+            margin-right: 12px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &__btn{
+            width: 170px;
+            background-color: #52B9F3;
+            color: $btn-color-text;
+            font-style: normal;
+            font-size: 11px;
+            //padding-top: 16px;
+            //padding-bottom: 16px; 
+            cursor: pointer;
+                &:hover{
+                    background-color: $color-active;
+                    transition: 0.5s;
+                }
+            }
+    }
+
+    .logo{
+
+        width: 177px;
+        & img{
+            width: 100%;
+            //height: 47px;
+        }
+    }
+
+    .promo{
+        &__text{
+            width: 400px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__btn{
+            margin-bottom: 80px;
+        }
+        &__descr{
+            width: 400px;
+            margin-bottom: 100px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+    }
+
+    .about{
+        &__title{
+            font-size: 28px;
+        }
+        &__text{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            
+        }
+    }
+
+    .services{
+        &__item-ar{
+            position: absolute;
+                    top: 11px;
+                    right: -25px;
+                    
+        }
+        &__item{
+            margin-bottom: 20px;
+            width: 350px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 8px 25px 12px 25px;
+        }
+        
+        &__text{
+            width: 340px;
+            padding-left: 10px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: $color-text;
+        }
+    }
+
+    .cost{
+        &__individual{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__married-couple{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__item{
+            width: 230px;
+            height: 350px;
+            & ul{
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        &__item-title{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &__special-offer{
+            margin-top: 50px;
+        }
+        &__price{
+            font-size: 28px;
+        }
+        &__btn{
+            width: 350px;
+            padding: 12px 0 12px 0;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 30px;
+        }
+    } 
+
+    .reviews{
+        &__item{
+            height: 400px;
+        }
+        &__wrapper{
+            margin-top: 30px;
+        }
+        &__next img{
+            width: 90%;
+        }
+        &__back img{
+            width: 90%;
+        }
+    }
+   
+
+    .card{
+        &__photo{
+            & img{
+                margin-left: 20px;
+            }
+        }
+        &__content{
+            margin-right: 20px;
+        }
+        &__content-name{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 31px;
+        }
+    }
+
+    .modal{
+        &__wrapper{
+            width: 300px;
+        }
+        &__form{
+            width: 100%;
+            height: 300px;
+            padding: 40px 0;
+            & input {
+                width: 90%;
+                height: 50px;
+            }
+            & button {
+                width: 90%;
+                height: 50px;
+                
+            }
+        }
+        &__info{
+            width: 300px;
+        } 
+    }
+}
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+
+    .header{
+        &__menu-item a{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;       
+        }
+        &__btn{
+            display: none;
+        }
+        
+    }
+
+    .logo{
+
+        width: 160px;
+        & img{
+            width: 100%;
+            //height: 47px;
+        }
+    }
+
+    .promo{
+        &__text{
+            width: 270px;
+        }
+        &__title{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__btn{
+            margin-bottom: 70px;
+            width: 250px;
+            padding: 8px 0 8px 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__descr{
+            width: 270px;
+            margin-bottom: 70px;
+            font-size: 13px;
+            line-height: 21px;
+        }
+
+    }
+
+    .about{
+        &__image img{
+            width: 235px;
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__text{
+            margin-left: 10px;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 22px;
+            
+        }
+    }
+
+    .services{
+        &__wrapper{
+            margin-top: 26px;
+            display: flex;
+            flex-direction: row;
+        }
+        &__item-ar{
+            position: absolute;
+                    top: 6px;
+                    right: -20px;
+                    width: 0; 
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-left: 25px solid $color-btn;
+                    border-bottom: 12px solid transparent;
+        }
+        &__item-arrow img{
+            width: 80%;
+        }
+        &__item{
+            margin-bottom: 20px;
+            width: 250px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 20px;
+            padding: 8px;
+        }
+        
+        &__text{
+            width: 250px;
+            padding-left: 0px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-text;
+        }
+    }
+
+    .cost{
+        &__individual{
+            font-size: 13px;
+            line-height: 22px;
+        }
+        &__married-couple{
+            font-size: 13px;
+            line-height: 21px;
+        }
+        &__item{
+            width: 170px;
+            height: 280px;
+            & ul{
+                margin-left: 10px;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        &__item-title{
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &__special-offer{
+            margin-top: 50px;
+        }
+        &__price{
+            height: 50px;
+            font-size: 22px;
+            padding-top: 10px;
+        }
+        &__btn{
+            width: 300px;
+            padding: 10px 0 10px 0;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    .reviews{
+        &__item{
+            height: 450px;
+        }
+        &__next {
+           margin-left: 20px;
+           margin-right: 20px;
+        }
+        &__back {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .card{
+        &__photo{
+            & img{
+                width: 63px;
+                height: 57px;
+                margin-left: 10px;
+                margin-top: 25px;
+            }
+        }
+        &__content{
+            margin-right: 10px;
+        }
+    }
+
+    .modal{
+        &__wrapper{
+            width: 250px;
+        }
+        &__form{
+            width: 100%;
+            height: 250px;
+            padding: 40px 0;
+            & input {
+                width: 90%;
+                height: 40px;
+                margin-bottom: 25px;
+                font-size: 18px;
+                line-height: 26px;
+            }
+            & button {
+                width: 90%;
+                height: 40px;
+                font-size: 18px;
+                line-height: 26px;
+                
+            }
+        }
+        &__info{
+            width: 250px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px; 
+        }
+
+       
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 440px;
+    }
+
+    .header{
+        &__menu-item a{
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 20px;       
+        }
+    }
+
+    .logo{
+        width:170px;
+        & img{
+            width: 100%;
+            //height: 47px;
+        }
+    }
+
+    .promo{
+        &__text{
+            width: 230px;
+        }
+        &__title{
+            font-size: 17px;
+            line-height: 22px;
+        }
+        &__btn{
+            margin-bottom: 50px;
+            width: 200px;
+            padding: 7px 0 7px 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &__descr{
+            width: 230px;
+            margin-bottom: 50px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+    }
+
+    .about{
+        &__image img{
+            width: 200px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__wrapper{
+            margin-top: 20px;
+        }
+        &__text{
+            margin-left: 10px;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+
+    .services{
+        &__item-ar{
+            position: absolute;
+                    top: 3px;
+                    right: -15px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__wrapper{
+            margin-top: 26px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__item-arrow img{
+            width: 70%;
+            transform: rotate(90deg);
+        }
+        &__item{
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 350px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 13px;
+            padding: 10px;
+        }
+        
+        &__text{
+            width: 100%;
+            min-width: 320px;
+            padding-left: 20px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+            color: $color-text;
+            padding-bottom: 30px;
+        }
+    }
+
+    .cost{
+        &__title{
+            font-size: 24px;
+        }
+        &__individual{
+            font-size: 13px;
+            line-height: 22px;
+        }
+        &__married-couple{
+            font-size: 13px;
+            line-height: 21px;
+        }
+        &__item{
+            width: 135px;
+            height: 220px;
+            & ul{
+                margin-left: 5px;
+                font-size: 11px;
+                line-height: 17px;
+            }
+        }
+        &__item-title{
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &__special-offer{
+            font-size: 24px;
+            margin-top: 50px;
+        }
+        &__price{
+            height: 40px;
+            font-size: 16px;
+            padding-top: 5px;
+        }
+        &__btn{
+            width: 260px;
+            padding: 10px 0 10px 0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    .reviews{
+        &__item{
+            height: 470px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__next {
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+        &__back {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &__circles{
+            margin-bottom: 20px;
+            width: 300px;
+            margin-top: 10px;
+        }
+    }
+
+    .card{
+        &__photo{
+            & img{
+                width: 43px;
+                height: 37px;
+                margin-left: 10px;
+                margin-top: 25px;
+            }
+        }
+        &__content-name{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__content{
+            margin-right: 10px;
+        }
+    }
+
+    .modal{
+        &__wrapper{
+            width: 250px;
+        }
+        &__form{
+            height: 250px;
+            padding: 20px 0;
+            & input {
+                height: 40px;
+                margin-bottom: 20px;
+            }
+            & button {
+                width: 90%;
+                height: 40px;
+            }
+        }
+        &__info{
+            width: 200px;
+            padding: 20px 20px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px; 
+        } 
+        &__btn{
+            width: 150px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    
+    
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header{
+        &__menu, &__menu-item a{
+            display: none;
+        }
+        &__phone-mobile{
+            display: block;
+        }
+       
+    }
+
+    .logo{
+
+        //outline: 1px solid blue;
+        & img{
+            width: 222px;
+            height: 47px;
+        }
+    }
+
+    .promo{
+        padding-top: 22px;
+        &__wrapper{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__photo{
+            width: 300px;
+            height: 374px;
+            
+            background: url("../assets/img/promo-bg.png") center (center/cover) no-repeat;
+        }
+        &__photo img {
+            display: block;
+            //margin: 0 auto;
+            margin-top: 50px;
+            width: 173px;
+        }
+        &__text{
+            width: 300px;
+        }
+        &__title{
+            margin-top: 12px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__descr{
+            margin: 0 auto;
+            width: 271px;
+            margin-top: 18px;
+            margin-bottom: 21px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__btn{
+            margin: 0 auto;
+            //margin-bottom: 250px;
+            width: 300px;
+            padding: 10px 0 10px 0;
+            
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .about{
+        padding-top: 37px;
+        &__title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+        }
+        &__wrapper{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__image img{
+            width: 300px;
+        }
+    }
+
+    .services{
+        padding-top: 32px;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        
+    }
+   
+    &__item{
+        width: 300px; //
+        height: 80px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 24px;
+        padding: 10px 15px 15px 10px;
+    }
+    &__item-arrow{
+        & img{
+            transform: rotate(90deg) ;
+            cursor: pointer;
+        }
+    }
+
+    &__text{
+        
+        padding-left: 0;
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+    &__text-arrow{
+        display: block;
+        margin-right: 10px;
+        margin-top: 4px;
+        width: 25px;
+        height: 25px;
+        background-color: $color-btn;
+    }
+    &__text_hidden{
+        display: none;
+    }
+    }
+
+    .cost{
+        padding-top: 10px;
+        &__title{
+            font-size: 24px;
+        }
+        &__individual{
+            margin-top: 9px;
+            font-size: 18px;
+            line-height: 22px;
+           
+        }
+        &__married-couple{
+            margin-top: 9px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__special-offer{
+            margin-top: 27px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &__wrappers{
+            flex-direction: column;
+            margin-top: 20px; 
+        }
+        &__item{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+            & ul{
+                margin-left: 15px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                
+            }
+            & li{
+                padding-bottom: 10px;
+            }
+        }
+        &__item-title{
+            margin-top: 7px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__price{
+            height: 70px;
+            padding-top: 15px;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;
+            
+        }
+        &__btn{
+            
+            margin-top: 40px;
+            
+        }
+
+    }
+
+    .reviews{
+        margin-top: 30px;
+        &__title{
+            font-size: 24px;
+        }
+        &__item{
+            flex-direction: column;
+            width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 620px;
+        }
+        &__next, &__back{
+            display: none;
+        }
+        &__circles{
+            margin: 0 auto;
+            margin-top: 22px;
+            margin-bottom: 40px;
+            width: 255px; 
+        }
+        
+    }
+
+    .card{
+        &__photo{
+            margin: 0 auto;
+            & img{
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+                
+                margin-top: 20px;
+            }
+        }
+        &__content{
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 20px;
+            
+        
+        }
+        &__content-name{
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        &__content-text{
+            
+            margin-left: 0px;
+            //font-size: 16px;
+            //line-height: 20px;
+            
+        }
+        &__content-date{
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $color-descr
+        }
+        &__content-date{
+            margin-top: 11px;
+            font-size: 12px;
+        }
+
+    }
+
+    .footer{
+        &__color{
+            background-color: $color-btn;
+            height: 60px;
+        }
+        &__social{
+           
+            width: 200px;
+            & a{
+                display: block;
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                }
+            }
+        } 
+    }
+
+    .modal{
+        &__wrapper{
+            width: 250px;
+        }
+        &__form{
+            height: 250px;
+        }
+       
+        &__btn{
+            width: 150px;
+        }
+        &__notification{
+            transform: translateY(-15px);
+        }
+    }
+}
+
+    
+

@@ -1,0 +1,23 @@
+.footer{
+    &__color{
+        padding-top: 17px;
+        background-color: $color-btn;
+        height: 60px;
+        
+        
+    }
+    &__social{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        & a{
+            display: block;
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }
+        }
+    } 
+
+    
+}
