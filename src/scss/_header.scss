@@ -1,56 +1,54 @@
 .header{
     margin-top: 5px;
     height: 50px;
-&__wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-&__menu{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    //outline: 1px solid red;
-}
-&__menu-item{
-    margin-right: 36px;
-    &:last-child{
-        margin-right: 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-}
-&__phone-mobile{
-    display: none;
-}
-&__menu-item a{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-decoration: none;
-    color: $color-text;
-    &:hover{
-        text-decoration:none;
-        border-bottom: 2px solid $accent-color;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        //outline: 1px solid red;
     }
-}
-&__btn{
-    width: 260px;
-    background-color: #52B9F3;
-    color: $btn-color-text;
-    font-style: normal;
-    font-size: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px; 
-    cursor: pointer;
-        &:hover{
-            background-color: $color-active;
-            transition: 0.5s;
+    &__menu-item{
+        margin-right: 36px;
+        &:last-child{
+            margin-right: 0;
         }
     }
-}
+    &__phone-mobile{
+        display: none;
+    }
+    &__menu-item a{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-decoration: none;
+        color: $color-text;
+        &:hover{
+            text-decoration:none;
+            border-bottom: 2px solid $accent-color;
+        }
+    }
+    &__btn{
+        width: 260px;
+        background-color: #52B9F3;
+        color: $btn-color-text;
+        font-style: normal;
+        font-size: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px; 
+        cursor: pointer;
+            &:hover{
+                background-color: $color-active;
+                transition: 0.5s;
+            }
+        }
+    }
 
 .logo{
-
-    //outline: 1px solid blue;
     & img{
         width: 222px;
         height: 47px;

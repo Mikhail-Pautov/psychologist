@@ -1,105 +1,91 @@
 .cost{
-&__title{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    color: $accent-color;
-    text-align: center;
-}
-&__individual{
-    margin-top: 21px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    color: $color-text;
-}
-&__married-couple{
-    margin-top: 4px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    color: $color-text; 
-}
-&__special-offer{
-    margin-top: 100px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 38px;
-    color: $color-text;
-    text-align: center; 
-}
-&__wrappers{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px; 
-}
-&__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 368px;
-    height: 408px;
-    border: 1px solid $color-btn;
-    & ul{
-        margin-left: 20px;
-        font-weight: 500;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: $accent-color;
+        text-align: center;
+    }
+    &__individual{
+        margin-top: 21px;
+        font-style: normal;
+        font-weight: 400;
         font-size: 24px;
         line-height: 32px;
         color: $color-text;
-        list-style-type: none;
     }
-    & li{
-        padding-bottom: 10px;
+    &__married-couple{
+        margin-top: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $color-text; 
     }
-}
-&__item-title{
-    margin-top: 27px;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
-    color: $color-text;
-    text-align: center;
-}
-&__price{
-    height: 77px;
-    background-color: $color-btn;
-    color: $btn-color-text;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 30px;
-    text-align: center;
-    padding-top: 23px;
-}
-&__btn{
-    margin: 0 auto;
-    margin-top: 60px;
-    width: 420px;
-    background-color: $color-btn;
-    padding: 12px 0 12px 0;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: $btn-color-text;
-    cursor: pointer;
-    &:hover{
-        background-color: $color-active;
-        transition: 0.5s;
+    &__special-offer{
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        color: $color-text;
+        text-align: center; 
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    &__wrappers{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px; 
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 368px;
+        height: 408px;
+        border: 1px solid $color-btn;
+        & ul{
+            margin-left: 20px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: $color-text;
+            list-style-type: none;
+        }
+        & li{
+            padding-bottom: 10px;
+        }
+    }
+    &__item-title{
+        margin-top: 27px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: $color-text;
+        text-align: center;
+    }
+    &__price{
+        height: 77px;
+        background-color: $color-btn;
+        color: $btn-color-text;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 23px;
+    }
+    &__btn{
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 420px;
+        background-color: $color-btn;
+        padding: 12px 0 12px 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $btn-color-text;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-active;
+            transition: 0.5s;
+        }
+    }
 }

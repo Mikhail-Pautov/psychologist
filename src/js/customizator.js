@@ -1,4 +1,4 @@
-export default class Customizator {
+/* export default class Customizator {
     constructor() {
         this.btnBlock = document.createElement('div');
         this.colorPicker = document.createElement('input');
@@ -136,20 +136,9 @@ export default class Customizator {
             this.colorPicker.setAttribute('type', 'color');
             this.colorPicker.setAttribute('value', '#ffffff');
 
-
-
-
             this.btnBlock.append(scaleInputS, scaleInputM);
-
             panel.classList.add('panel');
             document.querySelector('body').append(panel);
 
-        
-
     }
-
-    
-
-
-
-}
+} */

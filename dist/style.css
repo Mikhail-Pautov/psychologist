@@ -831,6 +831,7 @@ template {
   text-align: center;
 }
 
+/* @import "general"; */
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -965,7 +966,7 @@ template {
   .services__item-ar {
     position: absolute;
     top: 11px;
-    right: -25px;
+    right: -20px;
   }
   .services__item {
     margin-bottom: 20px;

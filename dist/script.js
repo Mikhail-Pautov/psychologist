@@ -166,11 +166,8 @@ window.addEventListener('DOMContentLoaded', () => {
     contForm.classList.add('modal__info_inactive');
     modalInfo.classList.remove('modal__info_inactive');
     const formData = new FormData(contForm);
-    postDate('server.php', formData).then(res => {
-      console.log(res);
-    }).catch(() => {
+    postDate('server.php', formData).then(res => {}).catch(() => {
       let error = new Error();
-      console.log(error.message);
     }).finally(() => {
       clearInputs();
       setTimeout(() => {
@@ -206,16 +203,19 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+  console.log(servicesItem);
   servicesItem.forEach((item, i) => {
     item.addEventListener('click', e => {
       let elem = e.target;
-      elem.append(block);
+      if (e.target.tagName === 'IMG') {
+        elem.offsetParent.append(block);
+      } else {
+        elem.append(block);
+      }
       servicesText.forEach(item => {
         item.classList.add('services__text_hidden');
       });
       servicesText[i].classList.remove('services__text_hidden');
-
-      //servicesItems max-width: 576px
       if (mQuery.matches) {
         block.remove();
         let addContent = servicesText[i];
@@ -232,8 +232,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const back = document.querySelector('.reviews__back');
   let coun = 0;
   const reviewsCircles = document.querySelector('.reviews__circles');
-
-  //<div class="reviews__circles_activ"></div>
   for (let i = 0; i < reviewsItem.length; i++) {
     const div = document.createElement('div');
     div.classList.add('reviews__circle');
@@ -285,27 +283,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //slider swipe
   const reviewsWrapper = document.querySelector('.reviews__wrapper');
-
-  //console.log(reviewsWrapper);
   let touchStr;
   reviewsWrapper.addEventListener('touchstart', e => {
     touchStr = e.changedTouches[0].screenX;
-    console.log(touchStr);
   });
   reviewsWrapper.addEventListener('touchend', e => {
     let toucheEnd = e.changedTouches[0].screenX;
-    console.log(`End ${toucheEnd}`);
     if (toucheEnd < touchStr - 100) {
-      console.log('psina');
       sliderNext();
     }
     if (toucheEnd > touchStr + 100) {
-      console.log('svin');
       sliderBack();
     }
-    //console.log(e.changedTouches[0].screenX);
   });
-}); //psc
+});
 
 /***/ })
 

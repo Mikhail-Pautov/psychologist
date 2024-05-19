@@ -1,107 +1,102 @@
 .reviews{
     margin-top: 27px;
-&__title{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    color: $accent-color;
-    text-align: center;
-}
-&__wrapper{
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
-}
-&__item{
-    display: flex;
-    width: 752px;
-    height: 350px;
-    min-height: 262px;
-    border: 1px solid $color-btn;
-    border-radius: 10px;
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: $accent-color;
+        text-align: center;
+    }
+    &__wrapper{
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        width: 752px;
+        height: 350px;
+        min-height: 262px;
+        border: 1px solid $color-btn;
+        border-radius: 10px;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 
-&__item_display{
-    display: none;
-}
-&__next{
-    margin: auto 0;
-    margin-left: 95px;
-    cursor: pointer;
-    &:hover{
-        background-color: rgb(227, 226, 226);
-        transition: 0.5s;
+    &__item_display{
+        display: none;
     }
-}
-&__back{
-    margin: auto 0;
-    margin-right: 95px;
-    cursor: pointer;
-    &:hover{
-        background-color: rgb(227, 226, 226);
-        transition: 0.5s;
-    }
-}
-&__circles{
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 400px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-&__circle{
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-    border: 2px solid $color-btn;
-    &:hover{
+    &__next{
+        margin: auto 0;
+        margin-left: 95px;
         cursor: pointer;
+        &:hover{
+            background-color: rgb(227, 226, 226);
+            transition: 0.5s;
+        }
     }
-}
-&__circles_activ{
-    background-color: $color-btn;
-}
-
-
+    &__back{
+        margin: auto 0;
+        margin-right: 95px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(227, 226, 226);
+            transition: 0.5s;
+        }
+    }
+    &__circles{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 400px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 100px;
+        border: 2px solid $color-btn;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__circles_activ{
+        background-color: $color-btn;
+    }
 }
 
 .card{
-&__photo{
-    & img{
-        width: 83px;
-        height: 77px;
-        margin-left: 97px;
-        margin-top: 25px;
+    &__photo{
+        & img{
+            width: 83px;
+            height: 77px;
+            margin-left: 97px;
+            margin-top: 25px;
+        }
     }
-}
-&__content{
-    margin-left: 13px;
-    margin-right: 117px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-&__content-name{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-    color: $color-text
-}
-&__content-text{
-    margin-top: 7px;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 26px;
-    color: $color-text;
-    
-}
-&__content-date{
-    margin-top: 15px;
-    font-weight: 400;
-    font-size: 14px;
-    color: $color-descr;
-}
-
+    &__content{
+        margin-left: 13px;
+        margin-right: 117px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__content-name{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: $color-text
+    }
+    &__content-text{
+        margin-top: 7px;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-text;
+    }
+    &__content-date{
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-descr;
+    }
 }

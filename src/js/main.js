@@ -88,11 +88,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
         postDate('server.php', formData)
             .then(res => {
-                console.log(res);
             })
             .catch(() => {
                 let error = new Error();
-                console.log(error.message);
             })
             .finally(() => {
                 clearInputs();
@@ -106,13 +104,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 //servicesItems
-    const servicesItem = document.querySelectorAll('.services__item');
+    const servicesItem = document.querySelectorAll('.services__item'); 
     const servicesText = document.querySelectorAll('.services__text');
     const mQuery = window.matchMedia('(max-width: 577px)');
     const screenWidth = window.visualViewport.width;
 
     let block = document.createElement('div');
     block.classList.add('services__item-ar');
+
     if(screenWidth > 576) {
         servicesItem[0].append(block);
     } else {
@@ -135,18 +134,25 @@ window.addEventListener('DOMContentLoaded', () => {
         }   
     });
     
+    console.log(servicesItem);
     servicesItem.forEach((item, i) => {
         item.addEventListener('click', (e) => {
+            
             let elem = e.target;
-            elem.append(block);
 
+            if(e.target.tagName === 'IMG'){
+                elem.offsetParent.append(block);
+            } else {
+                elem.append(block);
+            }
+            
             servicesText.forEach(item => {
                 item.classList.add('services__text_hidden');
             });
 
             servicesText[i].classList.remove('services__text_hidden');
 
-        //servicesItems max-width: 576px
+       
             if(mQuery.matches){
                 block.remove();
                 let addContent = servicesText[i];
@@ -166,7 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const reviewsCircles = document.querySelector('.reviews__circles');
     
 
-    //<div class="reviews__circles_activ"></div>
+    
     for(let i = 0; i < reviewsItem.length; i++){
         const div = document.createElement('div');
         div.classList.add('reviews__circle');
@@ -231,32 +237,28 @@ window.addEventListener('DOMContentLoaded', () => {
     //slider swipe
     const reviewsWrapper = document.querySelector('.reviews__wrapper');
 
-    //console.log(reviewsWrapper);
+    
     let touchStr;
 
     reviewsWrapper.addEventListener('touchstart', (e) => {
         touchStr = e.changedTouches[0].screenX;
-
-        console.log(touchStr);
     });
 
     reviewsWrapper.addEventListener('touchend', (e) => {
         let toucheEnd = e.changedTouches[0].screenX
         
-        console.log(`End ${toucheEnd}`);
+        
         if (toucheEnd < (touchStr - 100)){
-            console.log('psina');
             sliderNext();
         }
 
         if (toucheEnd > (touchStr + 100)){
-            console.log('svin');
             sliderBack();
         }
-        //console.log(e.changedTouches[0].screenX);
+        
 
     });
 
 
     
-}); //psc
+}); 
